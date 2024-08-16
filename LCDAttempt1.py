@@ -1,4 +1,4 @@
-import smartClockProj.LCDdisplay as LCD
+import LCDdisplay as LCD
 import time
 
 LCD.init(0x27,1)

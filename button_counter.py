@@ -1,6 +1,6 @@
 import gpiod
 import time
-import smartClockProj.LCDdisplay as LCD
+import LCDdisplay as LCD
 import requests
 
 BUTTON_PIN = 17

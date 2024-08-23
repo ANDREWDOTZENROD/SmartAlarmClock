@@ -6,13 +6,13 @@ import requests
 BUTTON_PIN = 17
 ButtonCount = 0
 LCD.init(0x27,1)
-apiKey = "f994156741ab43c98e2194130241308"
+apiKey = "7b91ce078db9405fbe9165153241508"
 baseURL = "http://api.weatherapi.com/v1/current.json?key=" + apiKey + "&q="
 cityName = input("Enter your city: ")
 completeURL = baseURL + cityName + "&aqi=no"
 
 # Initialize the GPIO chip and request the button line
-chip = gpiod.Chip('gpiochip4')
+chip = gpiod.Chip('gpiochip0')
 button_line = chip.get_line(BUTTON_PIN)
 button_line.request(consumer="Button", type=gpiod.LINE_REQ_DIR_IN)
 
